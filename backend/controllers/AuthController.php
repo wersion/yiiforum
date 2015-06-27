@@ -45,7 +45,7 @@ class AuthController extends BaseController
     	//$item->type=
     	$item->description=$model->description;
     	$item->ruleName=$model->ruleName==''?null:$model->ruleName;
-    	$item->data=$model->data;
+    	$item->data=$model->data == ''?null:$model->data;
     	$item->createdAt=$model->created_at;
     	$item->updatedAt=$model->updated_at;
     	return $item;

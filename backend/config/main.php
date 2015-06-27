@@ -28,6 +28,11 @@ return [
         'view' => [
 	        'class' => 'backend\base\BaseBackView',
         ],
+    		'request' => [
+    				'enableCookieValidation' => true,
+    				'enableCsrfValidation' => true,
+    				'cookieValidationKey' => 'xxxxxxx',
+    		],
         
     ],
     'params' => $params,
